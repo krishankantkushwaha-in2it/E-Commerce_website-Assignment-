@@ -63,7 +63,7 @@ font-size: 11px;
 .hero1{
 width:100%;
 
-background:url("../images/banner3.jpg") center/cover no-repeat;
+background:url("./images/banner3.jpg") center/cover no-repeat;
 
 display:grid;
 grid-template-columns: 50% 50%;
@@ -193,14 +193,14 @@ color: blueviolet;
 transform: scale(1.10);
 }
 
-.headphones{background-image:url("../images/headphone.jpg");}
-.smartphone{background-image:url("../images/phone.jpg");}
-.shoes{background-image:url("../images/shoes.jpg");}
-.watch{background-image:url("../images/watch.jpg");}
-.camera{background-image:url("../images/camera.jpg");}
-.blender{background-image:url("../images/mixer.jpg");}
-.bag{background-image:url("../images/bageee.jpg");}
-.lamp{background-image:url("../images/lamp.jpg");} 
+.headphones{background-image:url("./images/headphone.jpg");}
+.smartphone{background-image:url("./images/phone.jpg");}
+.shoes{background-image:url("./images/shoes.jpg");}
+.watch{background-image:url("./images/watch.jpg");}
+.camera{background-image:url("./images/camera.jpg");}
+.blender{background-image:url("./images/mixer.jpg");}
+.bag{background-image:url("./images/bageee.jpg");}
+.lamp{background-image:url("./images/lamp.jpg");} 
 
 .price{font-weight:800;color:#0b66c3}
 .meta{display:flex;justify-content:space-between;font-size:13px;color:#6b7280}

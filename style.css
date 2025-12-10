@@ -801,13 +801,14 @@ body{padding:12px}
 
 /* Wrapper (scroll allowed) */
 .table-wrapper {
-  width: 100%;
-  overflow-x: auto;
+  width: 60%;
+  max-height: 250px;
+  overflow-y: auto;
 }
 
 /* Table */
 .custom-table {
-  width: 130%;   
+  width: 100%;   
   min-width: 900px;
   border-spacing: 0;
   background: white;
@@ -819,6 +820,9 @@ body{padding:12px}
   background: #5cc6ff;
   color: white;
   font-weight: bold;
+  position: Sticky;
+  top: 0;
+  z-index: 15;
 }
 
 /* Basic cells */
@@ -833,8 +837,7 @@ body{padding:12px}
 /* Body scroll */
 .custom-table tbody {
   display: block;
-  max-height: 250px;
-  overflow-y: auto;
+  
 }
 
 .custom-table thead tr,
@@ -854,17 +857,16 @@ body{padding:12px}
   z-index: 15;    /* stay above other cells */
   box-shadow: -2px 0 4px rgba(0,0,0,0.1);
 }
- .action-btns{
+ 
+ .action-btns {
   position: sticky;
-   right: 0; 
-   /* freeze on right */
+  right: 0;       /* freeze on right */
    background: #5cc6ff;
   color: white;
   font-weight: bold;
-  z-index: 15;    /* stay above other cells */
+  z-index: 5;    /* stay above other cells */
   box-shadow: -2px 0 4px rgba(0,0,0,0.1);
 }
-/* Text ellipsis */
 .limit {
   overflow: hidden;
   white-space: nowrap;

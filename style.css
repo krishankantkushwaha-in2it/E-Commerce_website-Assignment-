@@ -618,7 +618,6 @@ header {
 
 .drop-input {
   cursor: pointer;
-  margin-top: 20px;
   display: flex;
   position: relative;
   background: aliceblue;
@@ -630,10 +629,11 @@ header {
   outline: none;
   font-size: 14px;
   transition: box-shadow 220ms ease, transform 220ms ease, border-color 220ms ease;
+  transition: all 0.3s ease;
 }
 
 .items {
-  display: none;
+  display: block;
   width: 100%;
   position: absolute;
   border: 1px solid rgba(8, 55, 83, 0.08);
@@ -642,6 +642,10 @@ header {
   border-radius: 5px;
   overflow-y: auto;
   background: #fbfeff;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
 }
 
 
@@ -663,6 +667,11 @@ header {
   position: absolute;
   right: 11px;
   top: 17px;
+  transition: transform 0.3s ease;
+}
+
+.drop-input:hover::after {
+  transform: rotate(180deg);
 }
 
 .mynavbar {
@@ -691,7 +700,9 @@ header {
 }
 
 .main-drop:hover .items {
-  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 /*  drop end */
@@ -1124,21 +1135,21 @@ hr {
 
 .dropdown {
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: 40px;
+  top: 0px;
   background: white;
   border: 1px solid #ddd;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   display: none;
   min-width: 120px;
-  z-index: 99;
+  z-index: 9;
 }
 
 
 .dropdown a {
-      display: flex;
-   justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   padding: 10px 15px;
   font-size: 14px;
   color: #333;
@@ -1158,70 +1169,72 @@ hr {
 .sticky-col {
   position: static;
 }
-/* Scrollbar ki width */
-::-webkit-scrollbar {
+
+
+
+.table-wrapper::-webkit-scrollbar {
   width: 12px;
-  height: 12px; /* Horizontal scrollbar ke liye */
+  height: 12px;
 }
 
-/* Scrollbar ke track ka style */
+
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1;
   border-radius: 10px;
 }
 
-/* Scrollbar ka thumb (jo slide hota hai) */
+
 ::-webkit-scrollbar-thumb {
   background-color: #2d91be;
   border-radius: 10px;
-  border: 3px solid #f1f1f1; /* Thumb ke around ek border */
+  border: 3px solid #f1f1f1;
 }
 
-/* Scrollbar ke hover par thumb ka style */
+
 ::-webkit-scrollbar-thumb:hover {
   background-color: #6fa7d4;
 }
 
-/* Scrollbar button ka style */
+
 ::-webkit-scrollbar-button {
   background-color: #d45656;
   border-radius: 50%;
 }
 
- 
+
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
   background: url("https://cdn-icons-png.flaticon.com/512/130/130906.png");
   background-position: center;
   background-size: 15px;
-   background-color: #f1f1f1;
+  background-color: #f1f1f1;
   background-repeat: no-repeat;
 }
- 
+
 ::-webkit-scrollbar-button:single-button:vertical:increment {
   background: url("https://cdn-icons-png.flaticon.com/512/2985/2985150.png");
   background-position: center;
   background-size: 15px;
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
   background-repeat: no-repeat;
 }
- 
+
 ::-webkit-scrollbar-button:single-button:horizontal:decrement {
   background: url("https://cdn-icons-png.flaticon.com/128/2985/2985161.png");
   background-position: center;
   background-size: 15px;
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
   background-repeat: no-repeat;
 }
- 
+
 ::-webkit-scrollbar-button:single-button:horizontal:increment {
   background: url("https://cdn-icons-png.flaticon.com/512/2985/2985179.png");
   background-position: center;
   background-size: 15px;
   background-repeat: no-repeat;
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
- 
- 
+
+
 
 
 

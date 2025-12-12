@@ -871,11 +871,11 @@ input[type="checkbox"] {
 }
 
 
-input[type="checkbox"]:checked+.custom-check {
-  /* background:var(--main-color); */
-  /* border-color:var(--main-color); */
-}
-
+/* input[type="checkbox"]:checked+.custom-check {
+   background:var(--main-color); 
+   border-color:var(--main-color); 
+} 
+*/
 input[type="checkbox"]:checked+.custom-check::after {
   transform: scale(1);
 }
@@ -1157,30 +1157,70 @@ hr {
 .sticky-col {
   position: static;
 }
-
-.table-wrapper::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+/* Scrollbar ki width */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px; /* Horizontal scrollbar ke liye */
 }
 
-
+/* Scrollbar ke track ka style */
 ::-webkit-scrollbar-track {
-  background: #d9e0e4;
+  background-color: #f1f1f1;
+  border-radius: 10px;
 }
 
-
-
+/* Scrollbar ka thumb (jo slide hota hai) */
 ::-webkit-scrollbar-thumb {
-
-  border-radius: 6px;
-  background: #215a6b;
+  background-color: #2d91be;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1; /* Thumb ke around ek border */
 }
 
-
+/* Scrollbar ke hover par thumb ka style */
 ::-webkit-scrollbar-thumb:hover {
-  background: #28749c;
+  background-color: #6fa7d4;
 }
 
+/* Scrollbar button ka style */
+::-webkit-scrollbar-button {
+  background-color: #d45656;
+  border-radius: 50%;
+}
+
+ 
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background: url("https://cdn-icons-png.flaticon.com/512/130/130906.png");
+  background-position: center;
+  background-size: 15px;
+   background-color: #f1f1f1;
+  background-repeat: no-repeat;
+}
+ 
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background: url("https://cdn-icons-png.flaticon.com/512/2985/2985150.png");
+  background-position: center;
+  background-size: 15px;
+    background-color: #f1f1f1;
+  background-repeat: no-repeat;
+}
+ 
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  background: url("https://cdn-icons-png.flaticon.com/128/2985/2985161.png");
+  background-position: center;
+  background-size: 15px;
+    background-color: #f1f1f1;
+  background-repeat: no-repeat;
+}
+ 
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+  background: url("https://cdn-icons-png.flaticon.com/512/2985/2985179.png");
+  background-position: center;
+  background-size: 15px;
+  background-repeat: no-repeat;
+    background-color: #f1f1f1;
+}
+ 
+ 
 
 
 

@@ -815,9 +815,8 @@ input[type="radio"] {
 .custom-radio::after {
   border-radius: 50%;
   content: "";
-  width: calc(var(--sizec) - 10px);
-  height: calc(var(--sizec) - 10px);
-
+  width: 6px;
+  height: 6px;
   background: var(--main-color);
   transform: scale(0);
   transition: 0.2s;
@@ -871,7 +870,7 @@ input[type="checkbox"] {
 
 
 .custom-check::after {
-  background-image: url(../images/tick.png);
+  background-image: url(./images/tick.png);
   content: "";
   width: var(--size);
   height: var(--size);
@@ -1069,6 +1068,10 @@ hr {
   display: table;
   width: 100%;
   table-layout: fixed;
+}
+.custom-table tbody tr:hover {
+ background-color: #d4ebfb;
+
 }
 
 

@@ -1,0 +1,21 @@
+@use 'variable' as *;
+@mixin flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin space-between{
+ display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin btn_border{
+  border: 1.5px solid $btn-bg;
+}
+
+@mixin dimesions($width, $height) {
+  width: $width;
+  height: $height;
+}

@@ -794,8 +794,8 @@ input[type="radio"] {
 .custom-radio::after {
   border-radius: 50%;
   content: "";
-  width: calc($sizec - 10px);
-  height: calc($sizec - 10px);
+  width: 6px;
+  height: 6px;
 
   background: $main-color;
   transform: scale(0);

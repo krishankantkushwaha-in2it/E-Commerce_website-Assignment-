@@ -735,8 +735,8 @@ input[type=radio] {
 .custom-radio::after {
   border-radius: 50%;
   content: "";
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   background: #cc2424;
   transform: scale(0);
   transition: 0.2s;

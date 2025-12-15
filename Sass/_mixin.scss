@@ -1,15 +1,11 @@
 @use 'variable' as *;
-@mixin flex-center{
+
+@mixin flex($justify: center) {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: $justify;
 }
 
-@mixin space-between{
- display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 @mixin btn_border{
   border: 1.5px solid $btn-bg;
